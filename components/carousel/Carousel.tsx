@@ -23,6 +23,8 @@ const Carousel = ({ images }:any) => {
         src={images[activeIndex]}
         alt={`Slide ${activeIndex}`}
         className="carousel__img"
+        width={900}
+        height={800}
       />
       <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
         &gt;
