@@ -1,5 +1,6 @@
 'use client'
 import '@/components/carousel/carousel.css'
+import Image from 'next/image';
 import React, { useState } from 'react';
 const Carousel = ({ images }:any) => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -18,7 +19,7 @@ const Carousel = ({ images }:any) => {
       <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
         &lt;
       </button>
-      <img
+      <Image
         src={images[activeIndex]}
         alt={`Slide ${activeIndex}`}
         className="carousel__img"
