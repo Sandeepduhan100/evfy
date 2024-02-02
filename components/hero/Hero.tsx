@@ -25,7 +25,7 @@ const Hero = () => {
     
   ]
   return (
-    <div className='flex gap-12 justify-items-stretch bg-white'>
+    <div className='flex flex-col sm:flex-col md:flex-row gap-12 justify-items-stretch bg-white'>
 
 <div className="carousel-container gap-5">  <Carousel images={images} /></div>
 
